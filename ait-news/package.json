@@ -1,0 +1,15 @@
+{
+  "name": "ait-news",
+  "version": "1.0.0",
+  "description": "hw5",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ait",
+    "news"
+  ],
+  "author": "Han Su",
+  "license": "MIT"
+}
