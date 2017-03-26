@@ -11,5 +11,9 @@
     "news"
   ],
   "author": "Han Su",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^4.9.1",
+    "mongoose-url-slugs": "^0.2.1"
+  }
 }

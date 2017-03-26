@@ -1,0 +1,23 @@
+
+
+
+
+
+{{#each new_post}}
+
+    <p><a href={{this.url}}> {{this.title}}</a><a href={{this.title}}> [COMMENTS]</a></p>
+
+{{/each}}
+
+<div>
+    <form action="/post" method="POST" >
+        <label for="url">URL</label>
+        <input type="text" id="url" name="url" placeholder=" Url ">
+        <label for="title">TITLE</label>
+        <input type="text" id="title" name="title" placeholder=" Title">
+
+        <!--<label for="fname">foooooodz</label>-->
+
+        <input type="submit" value="Poo">
+    </form>
+</div>
