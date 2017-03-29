@@ -42,7 +42,23 @@ app.get('/', function(req, res) {
         console.log(new_post);
         // render goes in callback
         // because it has to wait for find to finish
-        res.render('main', {new_post: new_post});
+
+        let ary = [], post_sorted = [];
+        new_post.forEach(function(x){ary.push(x.vote)});
+        ary = ary.sort().reverse();
+        let set1 = new Set(ary);
+        console.log("arrrry", ary)
+        set1.forEach(function(x){
+            "use strict";
+            new_post.forEach(function(e){
+            if (e.vote == x) {
+                post_sorted.push(e)
+            }}
+            )
+        })
+        console.log("post sorted",post_sorted);
+        res.render('main', {new_post: post_sorted});
+
     });
 
 });
