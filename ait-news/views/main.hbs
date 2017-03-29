@@ -5,7 +5,8 @@
 
 {{#each new_post}}
 
-    <p><a href={{this.url}}> {{this.title}}</a><a href={{this.title}}> [COMMENTS]</a></p>
+    <p><a href={{this.url}}> {{this.title}}</a><a href="http://localhost:3000/{{this.slug}}"> [COMMENTS]  </a> <a id="count">{{this.vote}}</a>
+    </p>
 
 {{/each}}
 
@@ -21,3 +22,10 @@
         <input type="submit" value="Poo">
     </form>
 </div>
+
+<script>
+    console.log("in hbs", {{this.vote}});
+    this.vote = this.vote+1;
+    console.log("in hbs again", {{this.vote}});
+
+</script>

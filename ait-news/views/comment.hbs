@@ -1,0 +1,28 @@
+<p>{{the_post.title}} <a href="{{the_post.url}}">{{the_post.url}}</a> </p>
+<p>Last Comment: {{last_comment}} {{last_name}}</p>
+
+{{#each the_post.comment}}
+    <p>{{this.text}} {{this.user}}</p>
+{{/each}}
+
+
+
+<div>
+    <form action="/comment" method="POST" >
+
+        <label for="url">Comment</label>
+        <input type="text" id="url" name="comment" placeholder=" Comment ">
+        <label for="title">Name</label>
+        <input type="text" id="name" name="name" placeholder=" Name">
+
+
+        <!--<label for="fname">foooooodz</label>-->
+
+        <input type="submit" value="Poo">
+        <input type="checkbox" name = "vote" value="Upvote"> Upvote</br>
+
+        <input type="hidden" name="hidden" value={{the_post.slug}}>
+
+    </form>
+</div>
+

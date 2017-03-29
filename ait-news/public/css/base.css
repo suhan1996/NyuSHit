@@ -70,13 +70,57 @@ div {
 
 p,h1 {
     margin: auto;
-    width: 50%;
+    width: 60%;
     border: 3px solid green;
     padding: 10px;
     text-align: center ;
 
 }
 
-.duiqi{
-    margin: 2.5vmax;
+#count,.button{
+    border: 1px solid green;
+    padding: 2px;
+
 }
+
+
+/*.duiqi{*/
+    /*margin: 0.5vmax;*/
+/*}*/
+/** {*/
+    /*box-sizing: border-box;*/
+/*}*/
+/*#count {*/
+    /*background: #9F0;*/
+    /*width: 10%;*/
+    /*height: 33px;*/
+    /*text-align: center;*/
+    /*line-height: 33px;*/
+    /*font-size: 21px;*/
+    /*margin: 0;*/
+    /*border: 1px solid green;*/
+    /*border-radius: 1px;*/
+/*}*/
+
+/*.button {*/
+    /*background: #09F;*/
+    /*width: 1.5%;*/
+    /*height: 17px;*/
+    /*text-align: center;*/
+    /*line-height: 17px;*/
+    /*font-size: 11px;*/
+    /*border: 1px solid blue;*/
+    /*border-radius: 1px;*/
+/*}*/
+
+/*.button, #count {*/
+    /*float: left;*/
+/*}*/
+
+/*#minus {*/
+    /*margin: 8px 2.5% 0 37.5%;*/
+/*}*/
+
+/*#plus {*/
+    /*margin: 8px 37.5% 0 2.5%;*/
+/*}*/

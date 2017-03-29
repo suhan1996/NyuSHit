@@ -11,8 +11,13 @@ const Comment = new mongoose.Schema({
 const Link = new mongoose.Schema({
     url: String,
     title: String,
-    comment: [Comment]
+    comment: [Comment],
+    vote: Number
 });
+
+const Upvote = new mongoose.Schema({
+    number: Number
+})
 
 //URLSlugs('<user>');
 Link.plugin(URLSlugs('title'));
