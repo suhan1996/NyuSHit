@@ -10,6 +10,7 @@
 // LISTEN ON PORT 3000
 
 // express static setup
+var cool = require('cool-ascii-faces');
 const path = require('path');
 const express = require("express");
 const session = require("express-session");
@@ -134,4 +135,22 @@ app.post('/post', function(req, res) {
 
 
 
-app.listen(8888);
+console.log("port",process.env.PORT);
+if(process.env.PORT == undefined){
+    //app.listen(8888);
+    app.set('port', (process.env.PORT || 8888));
+
+}
+else{
+   // app.listen(process.env.PORT);
+    app.set('port', (process.env.PORT || 8888));
+
+}
+
+app.get('/cool', function(request, response) {
+    response.send(cool());
+});
+
+app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
+});
